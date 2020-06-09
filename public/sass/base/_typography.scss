@@ -1,95 +1,101 @@
 body {
-    font-family: $font-primary;
-    font-size: 1.5rem;
-    font-weight: 500;
-    line-height: 1.7;
-    color: $color-black;
-  }
-  
-  .heading {
-    &-primary {
-      font: {
-        family: $font-heading;
-        size: 4.2rem;
-        weight: 600;
-      }
-      line-height: 1.2;
-      color: $color-secondary;
-      text-transform: uppercase;
+  font-family: $font-primary;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.7;
+  color: $color-black;
+}
+
+.heading {
+  &-primary {
+    font: {
+      family: $font-heading;
+      size: 4.2rem;
+      weight: 600;
     }
-  
-    &-secondary {
-      font: {
-        family: $font-heading;
-        size: 1.8rem;
-        weight: 500;
-      }
-      // color: $color-primary;
-    }
+    line-height: 1.2;
+    color: $color-secondary;
+    text-transform: uppercase;
   }
-  
-  .sub {
-    &-primary {
-      font: {
-        family: $font-heading;
-        size: 2rem;
-        weight: 300;
-      }
-      color: $color-gray-dark-2;
-      text-transform: lowercase;
+
+  &-secondary {
+    font: {
+      family: $font-heading;
+      size: 1.8rem;
+      weight: 500;
     }
+    color: $color-tertiary;
   }
+}
+
+.sub {
+  &-primary {
+    font: {
+      family: $font-heading;
+      size: 2rem;
+      weight: 300;
+    }
+    color: $color-gray-dark-2;
+    text-transform: lowercase;
+  }
+
+  &-secondary {
+    font: {
+      family: $font-primary;
+      size: 1.5rem;
+      weight: 500;
+    }
+    text-decoration: underline;
+    color: $color-gray-dark-1;
+  }
+}
 
 .text {
-    &-primary {
-      font-family: $font-primary;
-      font-size: 1.5rem;
-      font-weight: 400;
-      color: $color-white;
-      letter-spacing: 0.3px;
-      text-shadow: 0 0.2rem 0 rgba($color-black, 0.3);
-    }
+  &-primary {
+    font-family: $font-primary;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: $color-white;
+    letter-spacing: 0.3px;
+    text-shadow: 0 0.2rem 0 rgba($color-black, 0.3);
   }
-  
+}
 
 //   body header
-.body-header-text{
-    font:{
-        family: $font-primary;
-        size: 1.8rem;
+.body-header-text {
+  font: {
+    family: $font-primary;
+    size: 1.8rem;
+    weight: 400;
+  }
+  color: $color-white;
+  text-shadow: 0 0 0.2rem rgba($color-black, 0.2);
+}
+
+.header {
+  &-contact__link {
+    font: {
+      family: $font-primary;
+      size: 1.8rem;
+      weight: 400;
+    }
+
+    color: $color-white;
+    text-shadow: 0 0 0.2rem rgba($color-black, 0.2);
+  }
+
+  &-nav {
+    &__link {
+      font: {
+        family: $font-nav;
+        size: 2.2rem;
         weight: 400;
-        
+      }
+      color: $color-white;
+      letter-spacing: 0.6px;
     }
-    color: $color-white;
-    text-shadow: 0 0 0.2rem rgba($color-black, 0.2);
+  }
 }
-
-.header{
-    &-contact__link{
-        font:{
-            family: $font-primary;
-            size: 1.8rem;
-            weight: 400;
-        }
-        
-    color: $color-white;
-    text-shadow: 0 0 0.2rem rgba($color-black, 0.2);
-
-    }
-
-    &-nav {
-            &__link{
-                font:{
-                    family: $font-nav;
-                    size: 2.2rem;
-                    weight: 400;
-                }
-                color: $color-white;
-                letter-spacing: 0.6px;;
-            }
-    }
-}
-
 
 // footer
 .footer {
