@@ -11,7 +11,7 @@
 
         .wrap-container{
             @media (min-width:582px){
-                height: 100px;
+                height: 40px;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
@@ -25,7 +25,7 @@
     }
 
     &-main {
-        background-color: rgba($color-black, 0.7);
+        background-color: rgba($color-black, 0.9);
 
         header{
             
