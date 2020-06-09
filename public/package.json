@@ -1,0 +1,14 @@
+{
+  "name": "uppionlineacademy.com",
+  "version": "1.0.0",
+  "description": "academy website IIT-JEE and NEET",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Rohit and Sanghamitra",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
