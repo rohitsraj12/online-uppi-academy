@@ -1,0 +1,240 @@
+/*
+* ---------------------------------------------------------------------------------------------------------------------------------
+* 	
+*	Web URL	          : http://uppionlineacademy.com
+*	Year		      : 2020
+*	Developer team	  : Rohit and sanghamitra
+*   contact dev       : rohitwebco@gmail.com
+*   Dev-web           : rohitwebco.com
+*	Style		      : scss --> CSS-3
+*
+* ---------------------------------------------------------------------------------------------------------------------------------*/
+/*
+    fonts
+    font-family: 'El Messiri', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+*/
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-10rem); }
+  80% {
+    transform: translateY(1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem); }
+  80% {
+    transform: translateY(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(8rem); }
+  50% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  text-decoration: none;
+  list-style: none; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+.body-wrap {
+  position: relative; }
+
+.wrap-container {
+  margin: auto; }
+  @media (min-width: 769px) {
+    .wrap-container {
+      width: 80%; } }
+  @media (min-width: 583px) {
+    .wrap-container {
+      width: 90%; } }
+  @media (max-width: 582px) {
+    .wrap-container {
+      width: 94%; } }
+
+.section__header {
+  padding-bottom: 5rem;
+  text-align: center; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.7;
+  color: #000; }
+
+.heading-primary {
+  font-family: "El Messiri", sans-serif;
+  font-size: 4.2rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #0a0f1c;
+  text-transform: uppercase; }
+
+.heading-secondary {
+  font-family: "El Messiri", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500; }
+
+.sub-primary {
+  font-family: "El Messiri", sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #999;
+  text-transform: lowercase; }
+
+.text-primary {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 0.3px;
+  text-shadow: 0 0.2rem 0 rgba(0, 0, 0, 0.3); }
+
+.body-header-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.2); }
+
+.header-contact__link {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.2); }
+
+.header-nav__link {
+  font-family: "El Messiri", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #fff; }
+
+.u-center-text {
+  text-align: center !important; }
+
+.u-margin-top-big {
+  margin-top: 8rem !important; }
+
+.u-margin-top-mediun {
+  margin-top: 4rem !important; }
+
+.u-margin-top-small {
+  margin-top: 1.5rem !important; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important; }
+
+.u-padding-bottom-big {
+  padding-bottom: 8rem; }
+
+.u-padding-bottom-medium {
+  padding-bottom: 4rem; }
+
+.u-padding-bottom-small {
+  padding-bottom: 1.5rem; }
+
+.body-banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -5; }
+
+.banner-image img {
+  width: 100%;
+  height: 100vh; }
+
+.body-header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; }
+  .body-header-top {
+    padding: 1rem 0;
+    background-color: #00AEEF; }
+    @media (min-width: 582px) {
+      .body-header-top .wrap-container {
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; } }
+    @media (max-width: 581px) {
+      .body-header-top .wrap-container {
+        text-align: center; } }
+  .body-header-main {
+    background-color: rgba(0, 0, 0, 0.7); }
+    .body-header-main header {
+      margin: 0 auto; }
+      @media (min-width: 769px) {
+        .body-header-main header {
+          width: 80%;
+          padding: 1rem 0; } }
+      @media (min-width: 582px) {
+        .body-header-main header {
+          width: 90%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between; } }
+      @media (max-width: 581px) {
+        .body-header-main header {
+          width: 94%; } }
+
+.header-contact__link {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 600; }
+
+.header-brand img {
+  height: 8rem; }
+
+@media (min-width: 769px) {
+  .header-nav ul {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; } }
+
+@media (min-width: 769px) {
+  .header-nav__list + li {
+    margin-left: 3rem; } }
