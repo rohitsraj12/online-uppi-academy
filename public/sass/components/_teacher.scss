@@ -1,0 +1,94 @@
+.section__teachers{
+    padding: 10rem 0;
+    background-color: $color-white;
+}
+
+.teacher-main{
+    margin: 0 auto;
+
+    @media (min-width:582px) and (max-width:768px){
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    @media (min-width: 769px){
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+     }
+
+    @media (max-width:581px){
+        width: 94%;
+
+    }
+}
+
+.teacher{
+    &-card{
+        margin: 0 auto;
+        padding: 2rem 1.5rem;
+        border: 1px solid $color-gray-light-2;
+        text-align: center;
+      transition: 300ms ease-in-out;
+        
+
+        @media (min-width:582px) and (max-width:768px){
+            width: 45%;
+        }
+        @media(min-width:769px){
+            width: 24%;
+        }
+
+        @media(max-width:581px){
+        
+            width: 100%;
+        }
+
+        &:first-child, &:nth-child(2){
+            @media (min-width:582px) and (max-width:768px){
+        
+                margin-bottom: 5rem;                
+            }
+        }
+
+        &:not(:last-child){
+            @media(max-width:581px){
+                margin-bottom: 5rem;                
+            }
+        }
+
+        &-image{
+            figure{
+                border: 0.4rems solid $color-gray-light-2;
+            }
+
+            img{
+                width: 100%;
+                border-radius: 50%;
+            }
+        }
+
+        &-header{
+            padding: 2rem 0;
+        }
+           
+
+        &-subject{
+            padding-top: 1rem;
+            display: block;
+        }
+
+        &-body{
+            padding: 0 1rem;
+        }
+    }
+}
+
+.teacher-card:hover .teacher-card-image figure {
+        border: 1rem solid $color-primary;
+}
