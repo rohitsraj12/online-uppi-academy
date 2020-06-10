@@ -245,6 +245,67 @@ body {
   width: 100%;
   height: 100vh; }
 
+.section__teachers {
+  padding: 10rem 0;
+  background-color: #fff; }
+
+.teacher-main {
+  margin: 0 auto; }
+  @media (min-width: 582px) and (max-width: 768px) {
+    .teacher-main {
+      width: 90%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap; } }
+  @media (min-width: 769px) {
+    .teacher-main {
+      width: 80%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: nowrap; } }
+  @media (max-width: 581px) {
+    .teacher-main {
+      width: 94%; } }
+
+.teacher-card {
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  border: 1px solid #eee;
+  text-align: center;
+  transition: 300ms ease-in-out; }
+  @media (min-width: 582px) and (max-width: 768px) {
+    .teacher-card {
+      width: 45%; } }
+  @media (min-width: 769px) {
+    .teacher-card {
+      width: 24%; } }
+  @media (max-width: 581px) {
+    .teacher-card {
+      width: 100%; } }
+  @media (min-width: 582px) and (max-width: 768px) {
+    .teacher-card:first-child, .teacher-card:nth-child(2) {
+      margin-bottom: 5rem; } }
+  @media (max-width: 581px) {
+    .teacher-card:not(:last-child) {
+      margin-bottom: 5rem; } }
+  .teacher-card-image figure {
+    border: 0.4rems solid #eee; }
+  .teacher-card-image img {
+    width: 100%;
+    border-radius: 50%; }
+  .teacher-card-header {
+    padding: 2rem 0; }
+  .teacher-card-subject {
+    padding-top: 1rem;
+    display: block; }
+  .teacher-card-body {
+    padding: 0 1rem; }
+
+.teacher-card:hover .teacher-card-image figure {
+  border: 1rem solid #ed1c24; }
+
 .body-header {
   width: 100%;
   position: absolute;
