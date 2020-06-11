@@ -152,6 +152,17 @@ body {
   color: #fff;
   letter-spacing: 0.6px; }
 
+.banner-heading-primary {
+  font-family: "El Messiri", sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #fff; }
+
+.banner-heading-secondary {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 400; }
+
 .footer__header {
   font-family: "El Messiri", sans-serif;
   font-size: 2rem;
@@ -241,9 +252,44 @@ body {
 .u-padding-bottom-small {
   padding-bottom: 1.5rem; }
 
+.btn {
+  display: inline-block;
+  padding: 1.5rem 4rem;
+  font-family: "El Messiri", sans-serif;
+  font-size: 2rem;
+  font-weight: 400; }
+  .btn-secondary {
+    color: #fff;
+    background-color: #ed1c24; }
+
+.body-banner {
+  position: relative; }
+
 .banner-image img {
   width: 100%;
   height: 100vh; }
+
+.banner-container {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 60vh;
+  z-index: 10; }
+  @media (min-width: 769px) {
+    .banner-container {
+      padding: 0 4rem;
+      width: 50%;
+      bottom: 8%;
+      right: 5%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center; } }
+  .banner-container-wrap {
+    color: #fff; }
+
+.banner-body {
+  margin: 2.5rem 0 3.5rem; }
 
 .section__teachers {
   padding: 10rem 0;
@@ -310,7 +356,8 @@ body {
   width: 100%;
   position: absolute;
   top: 0;
-  left: 0; }
+  left: 0;
+  z-index: 1; }
   .body-header-top {
     padding: 1rem 0;
     background-color: #ed1c24; }
