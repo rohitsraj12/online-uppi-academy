@@ -1,0 +1,18 @@
+.btn{
+    display: inline-block;
+    padding: 1.5rem 4rem;
+    font:{
+        family: $font-heading;
+        size: 2rem;
+        weight: 400;
+    }
+
+    &-primary{
+
+    }
+
+    &-secondary{
+        color: $color-white;
+        background-color: $color-primary;
+    }
+}
