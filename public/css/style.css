@@ -274,7 +274,7 @@ body {
   background-color: rgba(0, 0, 0, 0.9);
   height: 60vh;
   z-index: 10; }
-  @media (min-width: 769px) {
+  @media (min-width: 582px) {
     .banner-container {
       padding: 0 4rem;
       width: 50%;
@@ -432,7 +432,7 @@ body {
 .header-brand img {
   height: 8rem; }
 
-@media (min-width: 582px) {
+@media (min-width: 769px) {
   .header-nav ul {
     height: 100px;
     display: flex;
@@ -440,17 +440,17 @@ body {
     justify-content: space-between;
     align-items: center; } }
 
-@media (max-width: 581px) {
+@media (max-width: 768px) {
   .header-nav ul {
     display: none;
     padding: 2rem 0;
     text-align: center; } }
 
-@media (min-width: 769px) {
+@media (min-width: 582px) {
   .header-nav__list + li {
     margin-left: 4rem; } }
 
-@media (max-width: 581px) {
+@media (max-width: 582px) {
   .header-nav__list {
     background-color: #ed1c24;
     padding: 0.6rem 0;
@@ -473,10 +473,10 @@ body {
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out; }
-  @media (min-width: 769px) {
+  @media (min-width: 582px) {
     .hamberger {
       display: none; } }
-  @media (max-width: 768px) {
+  @media (max-width: 581px) {
     .hamberger {
       padding-right: 1rem;
       position: absolute;
