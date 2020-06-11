@@ -6,7 +6,7 @@
   z-index: 99;
 
   &-top {
-    padding: 1rem 0;
+    padding: 0.5rem 0;
     background-color: $color-primary;
 
     .wrap-container {
@@ -28,15 +28,17 @@
 
     header {
       margin: 0 auto;
+      padding: 1rem 0 0;
       @media (min-width: 769px) {
         width: 80%;
-        padding: 1rem 0;
       }
       @media (min-width: 582px) {
         width: 90%;
+        height: 100px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
       }
       @media (max-width: 581px) {
         width: 94%;
@@ -47,14 +49,25 @@
 
 .header {
   &-contact__list {
+    display: inline;
+
+    &:after {
+      content: "|";
+      color: $color-white;
+      margin: 0 1rem;
+    }
+
+    &:last-child::after {
+      content: "";
+    }
   }
 
   &-contact__link {
-    font: {
-      family: $font-primary;
-      size: 2.2rem;
-      weight: 600;
-    }
+    // font: {
+    //   family: $font-primary;
+    //   size: 2.2rem;
+    //   weight: 600;
+    // }
   }
 
   &-brand {
@@ -81,7 +94,7 @@
     }
     &__list + li {
       @media (min-width: 769px) {
-        margin-left: 3rem;
+        margin-left: 4rem;
       }
     }
 
