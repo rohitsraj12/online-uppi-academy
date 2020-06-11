@@ -285,6 +285,17 @@ body {
       justify-content: center;
       align-items: center;
       text-align: center; } }
+  @media (max-width: 581px) {
+    .banner-container {
+      padding: 0 4rem;
+      width: 90%;
+      bottom: 8%;
+      right: 5%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center; } }
   .banner-container-wrap {
     color: #fff; }
 
@@ -375,7 +386,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1; }
+  z-index: 99; }
   .body-header-top {
     padding: 1rem 0;
     background-color: #ed1c24; }
@@ -425,11 +436,23 @@ body {
 
 @media (max-width: 581px) {
   .header-nav ul {
-    display: none; } }
+    display: none;
+    padding: 2rem 0;
+    text-align: center; } }
 
 @media (min-width: 769px) {
   .header-nav__list + li {
     margin-left: 3rem; } }
+
+@media (max-width: 581px) {
+  .header-nav__list {
+    background-color: #ed1c24;
+    padding: 0.6rem 0;
+    margin-bottom: 2px; } }
+
+@media (max-width: 581px) {
+  .header-nav__link {
+    display: block; } }
 
 .hamberger {
   animation-duration: 1.8s;
@@ -658,7 +681,7 @@ body {
     padding-bottom: 1.5rem; }
 
 .section-course-detail {
-  padding: 10rem 0; }
+  padding: 30rem 0 10rem; }
 
 .course-detail-top {
   padding-bottom: 5rem; }
@@ -689,10 +712,16 @@ body {
   background-color: #fff; }
   .course-detail-body ul {
     padding-bottom: 2rem; }
-    .course-detail-body ul li:before {
-      content: "-";
-      margin-left: 1rem;
-      margin-right: 2rem; }
+    .course-detail-body ul li {
+      position: relative;
+      padding-left: 40px;
+      padding-bottom: 1rem; }
+      .course-detail-body ul li:before {
+        content: url("../img/icons/right-tick-1.png");
+        display: inline-block;
+        position: absolute;
+        top: 3px;
+        left: 1rem; }
   .course-detail-body span {
     padding-bottom: 2rem;
     display: block; }
