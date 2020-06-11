@@ -306,24 +306,6 @@ body {
 .teacher-card:hover .teacher-card-image figure {
   border: 1rem solid #ed1c24; }
 
-.section-testimonial {
-  margin-bottom: 10rem;
-  padding: 10rem 0;
-  background-image: url(../img/bg/bg-testimonial.png);
-  background-position: center;
-  width: 100%; }
-  .section-testimonial .heading-primary {
-    color: #fff; }
-  .section-testimonial .sub-primary {
-    color: #f7f7f7; }
-  .section-testimonial blockquote {
-    margin: 0 auto;
-    text-align: center;
-    width: 60%; }
-    .section-testimonial blockquote p {
-      font-size: 1.7rem;
-      color: #f7f7f7; }
-
 .body-header {
   width: 100%;
   position: absolute;
