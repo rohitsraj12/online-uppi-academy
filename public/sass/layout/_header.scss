@@ -3,7 +3,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 99;
 
   &-top {
     padding: 1rem 0;
@@ -74,11 +74,28 @@
       }
       @media (max-width: 581px) {
         display: none;
+        padding: 2rem 0;
+        // background-color: $color-black;
+        text-align: center;
       }
     }
     &__list + li {
       @media (min-width: 769px) {
         margin-left: 3rem;
+      }
+    }
+
+    &__list {
+      @media (max-width: 581px) {
+        background-color: $color-primary;
+        padding: 0.6rem 0;
+        margin-bottom: 2px;
+      }
+    }
+
+    &__link {
+      @media (max-width: 581px) {
+        display: block;
       }
     }
   }
