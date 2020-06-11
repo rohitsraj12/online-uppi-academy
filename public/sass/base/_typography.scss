@@ -97,6 +97,32 @@ body {
   }
 }
 
+// banner
+
+
+
+.banner-heading{
+  &-primary{
+    font:{
+      family: $font-heading;
+      size: 3rem;
+      weight: 500;
+    }
+    color: $color-white;
+    // line-height: 5rem;
+  }
+ 
+  &-secondary{
+    font:{
+      family:$font-primary;
+      size: 2rem;
+      weight: 400;
+      // line-height: 5rem;
+    }
+
+  }
+}
+
 // footer
 .footer {
   &__header {
