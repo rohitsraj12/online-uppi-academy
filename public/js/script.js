@@ -14,6 +14,6 @@ $(document).ready(function () {
     //first hide all tabs again when a new option is selected
     $(".tab-content").hide();
     //then show the tab content of whatever option value was selected
-    $("#" + "tab-" + dropdown).show();
+    $("#" + "tab-" + dropdown).fadeIn(700);
   });
 });
