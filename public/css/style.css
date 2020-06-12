@@ -378,9 +378,14 @@ body {
       margin-bottom: 5rem; } }
   .teacher-card-image figure {
     border: 0.4rems solid #eee; }
-  .teacher-card-image img {
-    width: 100%;
-    height: 200px; }
+  @media (min-width: 582px) {
+    .teacher-card-image img {
+      max-width: 250px;
+      min-height: 270px; } }
+  @media (max-width: 581px) {
+    .teacher-card-image img {
+      max-width: 250px;
+      min-height: 300px; } }
   .teacher-card-header {
     padding: 2rem 0; }
   .teacher-card-subject {
