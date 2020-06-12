@@ -59,6 +59,8 @@ body {
         transform: scale(1.05);
         // background-color: $color-gray-light-1;
       }
+
+      
     }
 
     @media (max-width: 581px) {
@@ -98,18 +100,20 @@ body {
           // color: $color-gray-dark;
         }
       }
+      
     }
+  }
 
-    &-button {
+  &__footer{
+      padding: 1.5rem 0;
       text-align: center;
-      padding-bottom: 1.5rem;
-    }
   }
 }
 .section{
 &-video{
   padding: 10rem 0;
   background-image: url(../img/bg/bg-video.jpg);
+  background-blend-mode: darken;
   width: 100%;
   background-size: cover;
   background-position: right bottom;
@@ -140,7 +144,7 @@ body {
 
       ul{
         @media (min-width: 769px){
-          width: 40%;
+          width: 50%;
   
         }
         @media (max-width: 768px){
@@ -161,7 +165,8 @@ body {
         family: $font-heading;
         size: 3rem;
       }
-      color: $color-gray-dark-3;
+      background-color: rgba($color-black, 0.8);
+      color: $color-white;
       text-align: center;
     }
 }
