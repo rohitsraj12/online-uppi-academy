@@ -18,7 +18,7 @@ $(document).ready(function () {
   });
 
   // slider video
-  $(".owl-carousel").owlCarousel({
+  $(".video-body .owl-carousel").owlCarousel({
     loop: true,
     margin: 10,
     nav: false,
@@ -30,4 +30,20 @@ $(document).ready(function () {
       },
     },
   });
+
+  // testimonial-slider
+
+  $(".testimonial-body .owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: false,
+    autoplay: true,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+    },
+  });
+
 });
