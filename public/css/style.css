@@ -778,7 +778,8 @@ body {
 .section-video {
   padding: 10rem 0;
   background-image: url(../img/bg/bg-video.jpg);
-  background-blend-mode: darken;
+  background-color: #004b50;
+  background-blend-mode: hard-light;
   width: 100%;
   background-size: cover;
   background-position: right bottom; }
