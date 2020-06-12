@@ -16,4 +16,18 @@ $(document).ready(function () {
     //then show the tab content of whatever option value was selected
     $("#" + "tab-" + dropdown).fadeIn(700);
   });
+
+  // slider video
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: false,
+    autoplay: true,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+    },
+  });
 });
