@@ -1,6 +1,6 @@
 .btn{
     display: inline-block;
-    padding: 1.5rem 4rem;
+    border: none;
     font:{
         family: $font-heading;
         size: 2rem;
@@ -12,6 +12,14 @@
     }
 
     &-secondary{
+        padding: 1.5rem 3.5rem;
+        
+        color: $color-white;
+        background-color: $color-primary;
+    }
+
+    &-form{
+        padding: 0.5rem 2.5rem;
         color: $color-white;
         background-color: $color-primary;
     }
