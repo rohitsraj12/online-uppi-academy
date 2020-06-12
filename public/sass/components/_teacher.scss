@@ -69,7 +69,8 @@
 
             img{
                 width: 100%;
-                border-radius: 50%;
+                height: 200px;
+
             }
         }
 
@@ -85,10 +86,11 @@
 
         &-body{
             padding: 0 1rem;
+            display: none;
         }
     }
 }
 
 .teacher-card:hover .teacher-card-image figure {
-        border: 1rem solid $color-primary;
+        // border: 1rem solid $color-primary;
 }
