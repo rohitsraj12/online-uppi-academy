@@ -277,6 +277,11 @@ body {
   font-family: "El Messiri", sans-serif;
   font-size: 2rem;
   font-weight: 400; }
+  .btn-primary {
+    padding: 0.5rem 2.5rem;
+    color: #fff;
+    background-color: #ed1c24;
+    border-radius: 0.5rem; }
   .btn-secondary {
     padding: 1.5rem 3.5rem;
     color: #fff;
@@ -375,17 +380,15 @@ body {
     border: 0.4rems solid #eee; }
   .teacher-card-image img {
     width: 100%;
-    border-radius: 50%; }
+    height: 200px; }
   .teacher-card-header {
     padding: 2rem 0; }
   .teacher-card-subject {
     padding-top: 1rem;
     display: block; }
   .teacher-card-body {
-    padding: 0 1rem; }
-
-.teacher-card:hover .teacher-card-image figure {
-  border: 1rem solid #ed1c24; }
+    padding: 0 1rem;
+    display: none; }
 
 .section-testimonial {
   margin-bottom: 10rem;
@@ -762,13 +765,15 @@ body {
     .course-card__detail-right::before {
       padding-right: 0.5rem;
       content: ":"; }
-  .course-card-button {
-    text-align: center;
-    padding-bottom: 1.5rem; }
+
+.course__footer {
+  padding: 1.5rem 0;
+  text-align: center; }
 
 .section-video {
   padding: 10rem 0;
   background-image: url(../img/bg/bg-video.jpg);
+  background-blend-mode: darken;
   width: 100%;
   background-size: cover;
   background-position: right bottom; }
@@ -788,7 +793,7 @@ body {
       width: 94%; } }
   @media (min-width: 769px) {
     .video-body ul {
-      width: 40%; } }
+      width: 50%; } }
   @media (max-width: 768px) {
     .video-body ul {
       width: 100%; } }
@@ -800,7 +805,8 @@ body {
 .video__header {
   font-family: "El Messiri", sans-serif;
   font-size: 3rem;
-  color: #333;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
   text-align: center; }
 
 .section-course-detail {
