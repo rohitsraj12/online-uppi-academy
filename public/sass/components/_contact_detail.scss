@@ -1,13 +1,13 @@
 .section {
     &-contact {
       margin: 0 auto;
-      padding-top: 10rem;
   
       @media (min-width: 769px) {
         width: 80%;
       }
       @media (min-width: 582px) {
         width: 90%;
+        padding-top: 10rem;
       }
       @media (max-width: 581px) {
         width: 94%;
@@ -27,9 +27,16 @@
       }
   
       & > div {
+        border: 1px solid $color-gray-light-2;
+        background-color: $color-white;
         @media (min-width: 582px) {
           width: 30%;
           border: 1px solid $color-gray-dark-2;
+        }
+        &:not(:last-child){
+          @media(max-width: 581px){
+            margin-bottom: 3rem;
+          }
         }
       }
     }
