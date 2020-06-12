@@ -1,0 +1,113 @@
+.wrap-contact-page {
+    padding-top: 20rem;
+    @media (max-width: 581px) {
+      padding-top: 10rem;
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+  
+  .section-form {
+    margin: 0 auto;
+    display: flex;
+    @media (min-width: 768px) {
+      width: 80%;
+    }
+    @media (min-width: 582px) {
+      width: 90%;
+      padding: 10rem 0;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    @media (max-width: 581px) {
+      flex-direction: column-reverse;
+      width: 94%;
+    }
+  }
+  
+  .contact {
+    &-location {
+      @media (min-width: 768px) {
+        width: 45%;
+      }
+  
+      @media (max-width: 581px) {
+        padding-bottom: 8rem;
+        padding-top: 6rem;
+        text-align: center;
+      }
+    }
+  
+    &-heading {
+      @media (min-width: 768px) {
+        width: 60%;
+      }
+      padding-bottom: 3rem;
+    }
+  }
+  
+  .location__map {
+    .map-iframe {
+      @media (min-width: 582px) {
+        width: 100%;
+        height: 400px;
+      }
+      @media (max-width: 581px) {
+        width: 100%;
+        height: 500px;
+      }
+    }
+  }
+  // form
+  .form {
+    &__top {
+      @media (min-width: 582px) {
+        display: flex;
+        flex-direction: row;
+        // justify-content: space-between;
+        flex-wrap: wrap;
+      }
+    }
+    &__row {
+      padding-bottom: 2rem;
+      @media (min-width: 582px) {
+        width: 48%;
+      }
+  
+      label {
+        font-family: $font-heading;
+      }
+  
+      input {
+        margin-top: 0.5rem;
+        @media (min-width: 582px) {
+          width: 90%;
+        }
+        @media (max-width: 581px) {
+          width: 100%;
+        }
+  
+        display: block;
+        padding: 1rem 0.4rem;
+      }
+    }
+  
+    &__middle {
+      label {
+        font-family: $font-heading;
+      }
+  
+      textarea {
+        min-height: 14rem;
+        width: 92%;
+        @media (max-width: 582px) {
+          max-width: 100%;
+        }
+      }
+      margin-bottom: 2rem;
+    }
+  
+    button {
+      border: none;
+    }
+  }
