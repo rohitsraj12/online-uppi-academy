@@ -77,7 +77,7 @@
         font-family: $font-heading;
       }
   
-      input {
+      >input {
         margin-top: 0.5rem;
         @media (min-width: 582px) {
           width: 90%;
@@ -88,6 +88,33 @@
   
         display: block;
         padding: 1rem 0.4rem;
+      }
+
+      .select-box{
+        display: block;
+
+        @media (min-width: 582px) {
+          width: 90%;
+        }
+        @media (max-width: 581px) {
+          width: 100%;
+        }
+  
+        display: block;
+        padding: 1rem 0.4rem; 
+
+        option{
+          padding: 2rem 2rem;
+          font-size: 1.8rem;
+          line-height: 5rem;
+        }
+      }
+      ul{
+        padding-top: 1rem;
+        padding-right: 5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
       }
     }
   
