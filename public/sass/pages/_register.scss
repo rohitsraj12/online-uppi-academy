@@ -1,0 +1,20 @@
+.section-registration-form{
+    padding: 30rem 0 10rem 0;
+
+}
+.registration-form{
+    background-color: $color-white;
+    margin: 0 auto;
+    @media (min-width: 769px){
+        padding: 5rem 0 5rem 6rem;
+        width: 60%;
+    }
+    @media (min-width: 582px){
+        padding: 4rem 0 4rem 4rem;
+        width: 70%;
+    }
+    @media (max-width: 581px){
+        padding: 4rem 4rem 4rem 4rem;
+        width: 90%;
+    }
+}
