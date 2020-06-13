@@ -957,16 +957,36 @@ body {
       width: 48%; } }
   .form__row label {
     font-family: "El Messiri", sans-serif; }
-  .form__row input {
+  .form__row > input {
     margin-top: 0.5rem;
     display: block;
     padding: 1rem 0.4rem; }
     @media (min-width: 582px) {
-      .form__row input {
+      .form__row > input {
         width: 90%; } }
     @media (max-width: 581px) {
-      .form__row input {
+      .form__row > input {
         width: 100%; } }
+  .form__row .select-box {
+    display: block;
+    display: block;
+    padding: 1rem 0.4rem; }
+    @media (min-width: 582px) {
+      .form__row .select-box {
+        width: 90%; } }
+    @media (max-width: 581px) {
+      .form__row .select-box {
+        width: 100%; } }
+    .form__row .select-box option {
+      padding: 2rem 2rem;
+      font-size: 1.8rem;
+      line-height: 5rem; }
+  .form__row ul {
+    padding-top: 1rem;
+    padding-right: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
 
 .form__middle {
   margin-bottom: 2rem; }
@@ -981,3 +1001,22 @@ body {
 
 .form button {
   border: none; }
+
+.section-registration-form {
+  padding: 30rem 0 10rem 0; }
+
+.registration-form {
+  background-color: #fff;
+  margin: 0 auto; }
+  @media (min-width: 769px) {
+    .registration-form {
+      padding: 5rem 0 5rem 6rem;
+      width: 60%; } }
+  @media (min-width: 582px) {
+    .registration-form {
+      padding: 4rem 0 4rem 4rem;
+      width: 70%; } }
+  @media (max-width: 581px) {
+    .registration-form {
+      padding: 4rem 4rem 4rem 4rem;
+      width: 90%; } }
