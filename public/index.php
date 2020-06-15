@@ -2,7 +2,8 @@
 
   include('../private/config/config.php');
   include('../private/required/public/header.public.php');
-  // <?php base_url();?>
+
+?>
 
 
       <div class="body-banner">
