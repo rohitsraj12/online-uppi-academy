@@ -62,13 +62,18 @@
     }
   }
 
-  &-contact__link {
+  &-contact{
+    &__link {
     // font: {
     //   family: $font-primary;
     //   size: 2.2rem;
     //   weight: 600;
-    // }
+    }
+    &__icon{
+      margin: 0 0.5rem 0 0;
+    }
   }
+    
 
   &-brand {
     img {
