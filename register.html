@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Home | uppionlineacademy.com</title>
+
+    <meta name="description" content="<?php //echo $meta_discription;?>" />
+    <meta name="keywords" content="<?php //echo $meta_key;?>" />
+
+    <meta name="author" content="Rohit, rohitwebco@gmail.com" />
+    <meta name="distribution" content="global" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="url" content="<?php // base_url();?>" />
+    <meta name="Classification" content="tuition institute" />
+    <meta name="owner" content="" />
+    <meta name="author" content="" />
+    <meta name="robots" content="index, follow" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- style -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="public/css/style.css" />
+
+    <!-- script -->
+  </head>
+
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <div class="body-wrap">
+      <div class="body-header">
+        <div class="body-header-top">
+          <div class="wrap-container">
+            <div class="crash-course">
+              <p class="body-header-text">
+                <strong class="primary-word">physics</strong> crash course for
+                <strong class="primary-word">IIT JEE/NEET</strong>
+              </p>
+            </div>
+            <div class="header-contact">
+              <ul>
+                <li class="header-contact__list">
+                  <a href="#" class="header-contact__link"
+                    >uppionlineacademy@gmail.com</a
+                  >
+                </li>
+                <li class="header-contact__list">
+                  <a href="" class="header-contact__link">
+                    +91 953-874-4550
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="body-header-main">
+          <div id="hamberger" class="hamberger">
+            <span class="hamberger__line"></span>
+            <span class="hamberger__line"></span>
+            <span class="hamberger__line"></span>
+          </div>
+          <!-- end hamberger -->
+
+          <header>
+            <div class="header-brand">
+              <a href="index.html">
+                <img
+                  src="public/img/logo/uppi-logo.jpg"
+                  alt="uppi online academy"
+                />
+              </a>
+            </div>
+            <nav class="header-nav" id="header-nav">
+              <ul>
+                <li class="header-nav__list">
+                  <a href="course.html" class="header-nav__link">courses</a>
+                </li>
+                <li class="header-nav__list">
+                  <a href="" class="header-nav__link">teachers</a>
+                </li>
+                <li class="header-nav__list">
+                  <a href="" class="header-nav__link">notice</a>
+                </li>
+                <li class="header-nav__list">
+                  <a href="contact_us.html" class="header-nav__link">contact</a>
+                </li>
+                <!-- <li class="header-nav__list">
+                  <a href="" class="header-nav__link">sign up</a>
+                </li>
+                <li class="header-nav__list">
+                  <a href="" class="header-nav__link">log in</a>
+                </li> -->
+              </ul>
+            </nav>
+          </header>
+        </div>
+      </div>
+      <!-- end body header -->
+      <div class="body-container">
+        <main>
+            <section class="section-registration-form">
+                <header class="section__header">
+                    <h1 class="heading-primary">
+                        REGISTRATION FORM
+                    </h1>
+                </header>
+                <form action="" onsubmit="return validation()" class="registration-form">
+                    <div class="contact__form">
+                      <div class="form__top">
+                        <div class="form__row">
+                          <label for="firstname">firstname</label>
+                          <input
+                            type="text"
+                            id="firstname"
+                            name="name"
+                            value=""
+                            placeholder="first name"
+                          />
+                        </div>
+
+                        <div class="form__row">
+                            <label for="lastname">lastname</label>
+                            <input
+                              type="text"
+                              id="lastname"
+                              name="lastname"
+                              value=""
+                              placeholder="last name"
+                            />
+                          </div>
+  
+                        <div class="form__row">
+                          <label for="email">email</label>
+                          <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            value=""
+                            placeholder="your email "
+                          />
+                        </div>
+                        
+                        <div class="form__row">
+                            <label for="telephone">phone number</label>
+                            <input
+                              type="tel"
+                              id="telephone"
+                              name="phone number"
+                              placeholder="999 999 9999"
+                              value=""
+                            />
+                          </div>
+  
+                        <div class="form__row">
+                          <label for="standard">standard</label>
+                          <select class="select-box" id="select-box">
+                            <option value="select">select</option>
+                            <option value="12">standard 12th</option>
+                            <option value="11">standard 11th</option>
+                            <option value="10">standard 10th</option>
+                            <option value="9">standard 9th</option>
+                            <option value="8">standard 8th</option>
+                            <option value="7">standard 7th</option>
+                            <option value="6">standard 6th</option>
+                          </select>
+        
+                        </div>
+
+                        
+                        
+                        <div class="form__row ">
+                            <label for="course">course</label>
+                            <ul>
+                                <li><input
+                                    type="radio"
+                                    id="foundation"
+                                    name="course"
+                                    value="foundation"
+                                  />
+                                  <label for="foundation">foundation</label>
+                                </li>
+                                <li>   
+                                    <input
+                                      type="radio"
+                                      id="JEE"
+                                      name="course"
+                                      value="JEE"
+                                    />
+                                    <label for="JEE">IIT-JEE</label>
+                                </li>
+                                <li>
+                                    <input
+                                    type="radio"
+                                    id="NEET"
+                                    name="course"
+                                    value="NEET"
+                                  />
+                                  <label for="NEET">NEET</label>
+                                
+                                </li>
+                            </ul>
+
+                         
+                        </div>
+  
+                      </div>
+  
+                      <div class="form__bottom">
+                        <div class="form-btn">
+                          <input
+                            class="btn btn-form"
+                            type="button"
+                            name="submit"
+                            value="register"
+                          />
+                          <!-- <input
+                            class="reset"
+                            type="button"
+                            name="reset"
+                            value="reset"
+                          /> -->
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                
+            </section>
+        </main>
+    </div>
+
+    <!-- end body container -->
+    <div class="body-footer">
+      <footer>
+        <div class="body-footer-top">
+          <div class="footer-brand">
+            <div class="footer-brand-detail">
+              <img
+                class="footer-brand__image"
+                src="public/img/logo/uppi-logo.jpg"
+                alt=""
+              />
+              <!-- <p class="text-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis atque iusto culpa. Perspiciatis tenetur consectetur culpa totam et, natus repudiandae!</p> -->
+            </div>
+            <div class="footer-contact">
+              <ul>
+                <li class="footer-contact__list">
+                  <a href="#" class="footer-contact__link"
+                    >uppionlineacademy@gmail.com</a
+                  >
+                </li>
+                <li class="footer-contact__list">
+                  <a href="#" class="footer-contact__link"
+                    >+91 953-874-4550</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-main-nav">
+            <header class="footer__header">
+              quick links
+            </header>
+            <ul>
+              <li class="footer__list">
+                <a href="index.html" class="footer__link">home</a>
+              </li>
+              <!-- <li class="footer__list">
+                <a href="about_us.html" class="footer__link">about</a>
+              </li>
+              <li class="footer__list">
+                <a href="#" class="footer__link">FAQ</a>
+              </li> -->
+              <li class="footer__list">
+                <a href="#" class="footer__link">site map</a>
+              </li>
+              <li class="footer__list">
+                <a href="contact_us.html" class="footer__link">contact us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-course-nav">
+            <header class="footer__header">
+              Course
+            </header>
+            <ul>
+              <li class="footer__list">
+                <a href="course.html" class="footer__link">All courses</a>
+              </li>
+              <li class="footer__list">
+                <a href="course.html" class="footer__link">Foundation</a>
+              </li>
+              <li class="footer__list">
+                <a href="couse.html" class="footer__link">IIT-JEE</a>
+              </li>
+              <li class="footer__list">
+                <a href="couse.html" class="footer__link">NEET</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-social-media">
+            <header class="footer__header">
+              social media
+            </header>
+            <ul>
+              <li class="footer-social__list">
+                <a href="#" class="footer-social__link" target="_blank"
+                  ><i class="fa fa-facebook"></i
+                ></a>
+              </li>
+              <li class="footer-social__list">
+                <a href="#" class="footer-social__link" target="_blank"
+                  ><i class="fa fa-twitter"></i
+                ></a>
+              </li>
+              <li class="footer-social__list">
+                <a href="#" class="footer-social__link" target="_blank"
+                  ><i class="fa fa-instagram"></i
+                ></a>
+              </li>
+              <li class="footer-social__list">
+                <a href="#" class="footer-social__link" target="_blank"
+                  ><i class="fa fa-youtube"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="body-footer-bottom">
+          <div class="wrap-container">
+            <div class="copy_rights">
+              <p>
+                copy right 2020 |
+                <a href="index.html">uppionlineacademy.com</a>
+              </p>
+            </div>
+
+            <div class="developer-detail">
+              <p>Developed by <a href="#"></a></p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- end body footer -->
+  </div>
+
+  <!-- script -->
+  <script src="public/js/jquery-3.5.1.js"></script>
+  <script src="public/js/script.js"></script>
+</body>
+</html>
