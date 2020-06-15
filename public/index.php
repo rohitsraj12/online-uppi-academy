@@ -1,126 +1,385 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-  <!--<![endif]-->
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Home | uppionlineacademy.com</title>
+<?php
 
-    <meta name="description" content="<?php //echo $meta_discription;?>" />
-    <meta name="keywords" content="<?php //echo $meta_key;?>" />
+  include('../private/config/config.php');
+  include('../private/required/public/header.public.php');
+  // <?php base_url();?>
 
-    <meta name="author" content="Rohit, rohitwebco@gmail.com" />
-    <meta name="distribution" content="global" />
-    <meta name="MobileOptimized" content="width" />
-    <meta name="HandheldFriendly" content="true" />
-    <meta name="url" content="<?php // base_url();?>" />
-    <meta name="Classification" content="tuition institute" />
-    <meta name="owner" content="" />
-    <meta name="author" content="" />
-    <meta name="robots" content="index, follow" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600&family=Open+Sans&display=swap" rel="stylesheet">
-    
-    <!-- style -->
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="public/css/style.css" />
-
-    <!-- script -->
-  </head>
-
-  <body>
-    <!--[if lt IE 7]>
-      <p class="browsehappy">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="#">upgrade your browser</a> to improve your experience.
-      </p>
-    <![endif]-->
-    <div class="body-wrap">
-        <div class="body-header">
-          <div class="body-header-top">
-            <div class="wrap-container">
-              <div class="crash-course">
-                <p class="body-header-text"> <strong class="primary-word">physics</strong> crash course for <strong class="primary-word">IIT JEE/NEET</strong> </p>
+      <div class="body-banner">
+        <div class="banner-image">
+          <img src="<?php base_url();?>img/banner/banner-1.jpg" alt="UPPI ONLINE ACADEMT IIT-JEE NEET" />
+        </div>
+        <div class="banner-container">
+          <section>
+            <article class="banner-container-wrap">
+              <header class="banner__header">
+                <h1 class="banner-heading-primary">
+                  online classes for IIT JEE + CBSE + NEET
+                </h1>
+              </header>
+              <div class="banner-body">
+                <h2 class="banner-heading-secondary">
+                  physics, math, chemistry made easy!
+                </h2>
               </div>
-              <div class="header-contact">
-                <ul>
-                  <li class="header-contact__list"><a href="" class="header-contact__link">
-                    434687676542
-                  </a>
-                </li>
-                </ul>
-              </div>
-            </div>
-          </div>    
-          <div class="body-header-main">
-            <header>
-              <div class="header-brand">
-                <a href="">
-                  <img src="public/img/logo/uppi-logo.jpg" alt="uppi online academy">
+              <div class="banner-footer">
+                <a href="<?php base_url();?>course.php" class="btn btn-secondary">
+                  start learning now
                 </a>
               </div>
-             <nav class="header-nav">
-              <ul>
-                <li class="header-nav__list"><a href="" class="header-nav__link">courses</a></li>
-                <li class="header-nav__list"><a href="" class="header-nav__link">notice</a></li>
-                <!-- <li class="header-nav__list"><a href="" class="header-nav__link">sign up</a></li>
-                <li class="header-nav__list"><a href="" class="header-nav__link">log in</a></li> -->
-              </ul>
-             </nav>
+            </article>
+          </section>
+        </div>
+        <!-- end banner container-->
+      </div>
+      <!-- end body banner -->
+
+      
+      <div class="body-container">
+        <main>
+          
+        <section class="section__course">
+            <header class="section__header">
+              <sub class="sub-primary">Our Online Offerings</sub>
+              <h2 class="heading-primary">IIT JEE, CBSE, ICSE, NEET</h2>
             </header>
-          </div>
-        </div>
-        <!-- end body header -->
-        <div class="body-banner">
-          <div class="banner-image">
-            <img src="public/img/banner/banner-1.jpg" alt="">
-          </div>
-          <div class="banner-container">
-            <main>
-                <section class="section-course">
-                    <div class="course">
-                        
-                        <header class="section__header">
-                            <sub class="sub-primary"></sub>
-                            <h1 class="heading-primary">
-                                IIT JEE, CBSE, ICSE, NEET
-                            </h1>
-                        </header>
-                        <div class="course-body">
-                            
-                        </div>
-                    </div>
-                </section>
-                <section class="section-teacher">
-                    <header class="section__header">
-                        
-                    </header>
-                </section>
-                <section class="section-testimonial">
-                    <blockquote>
+            <section class="course__body">
+              <article class="course-card">
+                <header class="course-card__header">
+                  <h1 class="heading-secondary u-padding-bottom-small">
+                    LIVE ONLINE CLASSES <br />
+                    (2020-2021)
+                  </h1>
+                  <span class="sub-secondary">Available for Std 7-12</span>
+                </header>
+                <div class="course-card-body">
+                  <p class="u-padding-bottom-small">
+                    Learn and interact live with from the comfort of your home.
+                    Ask and clarify doubts instantly during the live class.
+                  </p>
+                  <span class="sub-secondary u-left-text">
+                    For each subject, you get:
+                  </span>
+                  <p>
+                    Everything in the mentored learning program
+                  </p>
+                  <p>
+                    Live Virtual Class is just like a physical classroom, but
+                    even better, without the time waste and hassle of
+                    travelling. This course is perfect for hard-working
+                    achievers ready to devote for each subject.
+                  </p>
+                </div>
+                <footer class="course__footer">
+                  <a href="<?php base_url();?>course.php" class="btn btn-primary"
+                    >course details</a
+                  >
+                </footer>
+              </article>
+              <!-- end course card -->
+              <article class="course-card">
+                <header class="course-card__header">
+                  <h1 class="heading-secondary u-padding-bottom-small">
+                    MENTORED LEARNING PROGRAM <br />(2020-2021)
+                  </h1>
+                  <span class="sub-secondary">Available for Std 11-12 </span>
+                </header>
+                <div class="course-card-body">
+                  <p>
+                    Online video lessons and printed study materials for all
+                    topics. Each week your personal mentor will assign your
+                    lessons, track your progress and clear your doubts.
+                  </p>
+                  <span class="sub-secondary u-left-text">
+                    For each subject, you get:
+                  </span>
+                  <p>
+                    Everything in the full year online course
+                  </p>
+                  <ul>
+                    <li>40 printed workbooks</li>
+                    <li>20 topic tests</li>
+                    <li>
+                      4 revision tests with live online test discussion with
+                      expert teachers
+                    </li>
+                    <li>
+                      A personal mentor to guide you and clear your doubts.
+                    </li>
+                  </ul>
+                </div>
+                <footer class="course__footer">
+                  <a href="<?php base_url();?>course.php" class="btn btn-primary"
+                    >course details</a
+                  >
+                </footer>
+              </article>
+              <!-- end course card -->
+              <article class="course-card">
+                <header class="course-card__header">
+                  <h1 class="heading-secondary u-padding-bottom-small">
+                    SELF STUDY COURSES <br />
+                    (2020-2021)
+                  </h1>
+                  <span class="sub-secondary">Available for Std 8-12 </span>
+                </header>
+                <div class="course-card-body">
+                  <p class="u-padding-bottom-small">
+                    Online video lessons for all topics. Learn any topic,
+                    anytime, at your own pace.
+                  </p>
+                  <span class="sub-secondary u-left-text">
+                    For each subject, you get:
+                  </span>
+                  <ul>
+                    <li>200 video lectures</li>
+                    <li>750 solved video examples</li>
+                    <li>1000 practice questions</li>
+                  </ul>
+                  <p>
+                    Each subject course requires 4 hours of effort per week.
+                    This course is perfect for motivated self-learners. Often,
+                    students who attend other coaching classes take this course
+                    to strengthen their concepts and master problem solving
+                    techniques.
+                  </p>
+                </div>
+                <footer class="course__footer">
+                  <a href="<?php base_url();?>course.php" class="btn btn-primary"
+                    >course details</a
+                  >
+                </footer>
+              </article>
+              <!-- end course card -->
+            </section>
+          </section>
+          <!-- end section course -->
 
-                    </blockquote>
-                </section>
+          <section class="section-video">
+            <header class="section__header">
+              <sub class="sub-primary"></sub>
+              <h2 class="heading-primary">our video samples</h2>
+            </header>
+            <div class="video-body">
+              <ul class="owl-carousel owl-theme">
+                <li>
+                  <div class="video-wrap">
+                    <iframe
+                      src="https://www.youtube.com/embed/Zg1JhzqBtMA"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                      class="video__iframe"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                  <header class="video__header">
+                    Chemistry
+                  </header>
+                </li>
+                <li>
+                  <div class="video-wrap">
+                    <iframe
+                      src="https://www.youtube.com/embed/KIOdQZr8IoA"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                      class="video__iframe"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                  <header class="video__header">
+                    Introduction to chemistry - Hydrogen Bond
+                  </header>
+                </li>
+                <li>
+                  <div class="video-wrap">
+                    <iframe
+                      src="https://www.youtube.com/embed/ecutKK1wdSw"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                      class="video__iframe"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                  <header class="video__header">
+                    introduction to chemistry - Hydrogen spectrum
+                  </header>
+                </li>
+                <li>
+                  <div class="video-wrap">
+                    <iframe
+                      src="https://www.youtube.com/embed/Jh_CvFmNTiY"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                      class="video__iframe"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                  <header class="video__header">
+                    introduction to chemistry - Coordinate Covalent bond
+                  </header>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <!-- end section video -->
 
-            </main>
-          </div>
-        </div>
-        <!-- end body banner -->
-        <div class="body-container"></div>
-        <!-- end body container -->
-        <div class="body-footer"></div>
-        <!-- end body footer -->
-    </div>
-    
-    <!-- script -->
-    <script src="public/js/jquery-3.5.1.js"></script>
-    <script src="public/js/script.js"></script>
-  </body>
-</html>
+          <section class="section__teachers">
+            <header class="section__header">
+              <sub class="sub-primary">Our Top</sub>
+              <h2 class="heading-primary">Teachers</h2>
+            </header>
+            <section class="teacher-main">
+              <article class="teacher-card">
+                <div class="teacher-card-image">
+                  <figure>
+                    <img
+                      src="<?php base_url();?>img/teacher/N.Srinivasarao.jpg"
+                      alt="N.Srinivasarao"
+                    />
+                  </figure>
+                </div>
+                <div class="teacher-card-header">
+                  <header>
+                    <h1>
+                      N.Srinivasarao, M.Sc, B.Ed.
+                      <strong class="teacher-card-subject"> Chemistry </strong>
+                    </h1>
+                  </header>
+                </div>
+                <div class="teacher-card-body">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Odit impedit porro error corporis quibusdam corrupti quas,
+                    debitis deleniti officiis asperiores.
+                  </p>
+                </div>
+              </article>
+
+              <article class="teacher-card">
+                <div class="teacher-card-image">
+                  <figure>
+                    <img
+                      src="<?php base_url();?>img/teacher/P.Venkatesh.jpg"
+                      alt="P.Venkatesh"
+                    />
+                  </figure>
+                </div>
+                <div class="teacher-card-header">
+                  <header>
+                    <h1>
+                      P. Venkatesh, M.Sc, B.Ed
+                      <strong class="teacher-card-subject"> Physics </strong>
+                    </h1>
+                  </header>
+                </div>
+                <div class="teacher-card-body">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Odit impedit porro error corporis quibusdam corrupti quas,
+                    debitis deleniti officiis asperiores.
+                  </p>
+                </div>
+              </article>
+
+              <article class="teacher-card">
+                <div class="teacher-card-image">
+                  <figure>
+                    <img src="<?php base_url();?>img/teacher/teacherImage.png" alt="" />
+                  </figure>
+                </div>
+                <div class="teacher-card-header">
+                  <header>
+                    <h1>
+                      teacher name
+                      <strong class="teacher-card-subject"> subject </strong>
+                    </h1>
+                  </header>
+                </div>
+                <div class="teacher-card-body">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Odit impedit porro error corporis quibusdam corrupti quas,
+                    debitis deleniti officiis asperiores.
+                  </p>
+                </div>
+              </article>
+
+              <article class="teacher-card">
+                <div class="teacher-card-image">
+                  <figure>
+                    <img src="<?php base_url();?>img/teacher/teacherImage.png" alt="" />
+                  </figure>
+                </div>
+                <div class="teacher-card-header">
+                  <header>
+                    <h1>
+                      teacher name
+                      <strong class="teacher-card-subject">
+                        subject
+                      </strong>
+                    </h1>
+                  </header>
+                </div>
+                <div class="teacher-card-body">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Odit impedit porro error corporis quibusdam corrupti quas,
+                    debitis deleniti officiis asperiores.
+                  </p>
+                </div>
+              </article>
+            </section>
+          </section>
+          <!-- end  section teacher -->
+
+          <section class="section-testimonial">
+            <header class="section__header">
+              <sub class="sub-primary">what students</sub>
+              <h2 class="heading-primary">say about us</h2>
+            </header>
+            <div class="testimonial-body">
+              <ul class="owl-carousel owl-theme">
+                <li>
+                  <blockquote>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Asperiores enim, dolore ipsam deleniti sit aspernatur
+                      officia. Temporibus voluptate ratione eveniet
+                      exercitationem excepturi recusandae quod, maxime nulla
+                      voluptatem, blanditiis ea magnam.
+                    </p>
+                  </blockquote>
+                </li>
+                <li>
+                  <blockquote>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Asperiores enim, dolore ipsam deleniti sit aspernatur
+                      officia. Temporibus voluptate ratione eveniet
+                      exercitationem excepturi recusandae quod, maxime nulla
+                      voluptatem, blanditiis ea magnam.
+                    </p>
+                  </blockquote>
+                </li>
+                <li>
+                  <blockquote>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Asperiores enim, dolore ipsam deleniti sit aspernatur
+                      officia. Temporibus voluptate ratione eveniet
+                      exercitationem excepturi recusandae quod, maxime nulla
+                      voluptatem, blanditiis ea magnam.
+                    </p>
+                  </blockquote>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+        </main>
+      </div>
+      <!-- end body container -->
+
+<?php
+  include('../private/required/public/footer.public.php');
+?>
