@@ -1,8 +1,9 @@
 <?php
-
+  $page_title = "Home"; 
+  $meta_discription = "";
+  $meta_key = "uppi online academy, IIT-JEE online academy, NEET online academy, online academy, chemistry, physics, maths, biology";
   include('../private/config/config.php');
   include('../private/required/public/header.public.php');
-
 ?>
 
 
