@@ -6,6 +6,16 @@
 
 
 
+<div class="dashboard__content">
+    <div class="dashboard__admin">
+        <div class="dashboard__admin-wrap">
+            <div class="page">
+                Dashboard
+            </div>
+        </div>
+    </div>
+</div>
+
 <?php
     include('../../private/required/dashboard/footer.dashboard.php');
 ?>
