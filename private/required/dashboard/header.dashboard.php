@@ -20,7 +20,9 @@
                     <ul>
                         <li><a class="active" href="<?=base_url();?>dashboard/index.php">Dashboard</a></li>
                         <li><a href="<?=base_url();?>dashboard/teacher/index.php">Teacher</a></li>
-                        <li><a href="<?=base_url();?>dashboard/products/insert_new_product.php">Insert New Product</a></li>
+                        <li><a href="<?=base_url();?>dashboard/testimonial/index.php">testimonial</a></li>
+                        <li><a href="<?=base_url();?>dashboard/social_media/index.php">social media</a></li>
+                        <li><a href="<?=base_url();?>dashboard/video/index.php">Youtube video</a></li>
                         <li><a href="<?=base_url();?>dashboard/log_out.php">Log out</a></li>
                     </ul>
                 </nav>
