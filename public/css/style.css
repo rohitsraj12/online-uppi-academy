@@ -291,6 +291,72 @@ body {
     color: #fff;
     background-color: #ed1c24; }
 
+@media (min-width: 582px) {
+  .form__top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; } }
+
+.form__row {
+  padding-bottom: 2rem; }
+  @media (min-width: 582px) {
+    .form__row {
+      width: 48%; } }
+  .form__row label {
+    font-family: "El Messiri", sans-serif; }
+  .form__row > input {
+    margin-top: 0.5rem;
+    display: block;
+    padding: 1rem 0.4rem; }
+    @media (min-width: 582px) {
+      .form__row > input {
+        width: 90%; } }
+    @media (max-width: 581px) {
+      .form__row > input {
+        width: 100%; } }
+  .form__row .select-box {
+    display: block;
+    display: block;
+    padding: 1rem 0.4rem; }
+    @media (min-width: 582px) {
+      .form__row .select-box {
+        width: 90%; } }
+    @media (max-width: 581px) {
+      .form__row .select-box {
+        width: 100%; } }
+    .form__row .select-box option {
+      padding: 2rem 2rem;
+      font-size: 1.8rem;
+      line-height: 5rem; }
+  .form__row ul {
+    padding-top: 1rem;
+    padding-right: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+
+.form__middle {
+  margin-bottom: 2rem; }
+  .form__middle label {
+    font-family: "El Messiri", sans-serif; }
+  .form__middle textarea {
+    min-height: 14rem;
+    width: 92%; }
+    @media (max-width: 582px) {
+      .form__middle textarea {
+        max-width: 100%; } }
+
+.form button {
+  border: none; }
+
+.section-registration-form .registration-textarea {
+  width: 90%; }
+  .section-registration-form .registration-textarea label {
+    display: block; }
+  .section-registration-form .registration-textarea textarea {
+    width: 100%;
+    height: 10rem; }
+
 .body-banner {
   position: relative; }
 
@@ -350,7 +416,7 @@ body {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      flex-wrap: nowrap; } }
+      flex-wrap: wrap; } }
   @media (max-width: 581px) {
     .teacher-main {
       width: 94%; } }
@@ -619,7 +685,8 @@ body {
       padding: 0 0 0 1.3rem; }
 
 .body-footer-top {
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-bottom: 5rem; }
   @media (min-width: 768px) {
     .body-footer-top {
       width: 80%; } }
@@ -642,12 +709,12 @@ body {
   background-color: #0a0f1c;
   padding: 2rem; }
   @media (min-width: 582px) {
-    .body-footer-bottom .wrap__container {
+    .body-footer-bottom .wrap-container {
       display: flex;
       flex-direction: row;
       justify-content: space-between; } }
   @media (max-width: 581px) {
-    .body-footer-bottom .wrap__container {
+    .body-footer-bottom .wrap-container {
       text-align: center; } }
 
 @media (min-width: 582px) {
