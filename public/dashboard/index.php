@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dashboard | uppi online academy</title>
-</head>
-<body>
-    
-</body>
-</html>
+<?php
+    include('../../private/config/config.php');
+    require_once ("../../private/config/database/db_connect.php");
+    include('../../private/required/dashboard/header.dashboard.php');
+?>
+
+
+
+<?php
+    include('../../private/required/dashboard/footer.dashboard.php');
+?>
