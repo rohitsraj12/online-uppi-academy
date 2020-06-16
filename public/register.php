@@ -75,10 +75,7 @@ $meta_key = "uppi online academy, IIT-JEE online academy, NEET online academy, o
                             <option value="7">standard 7th</option>
                             <option value="6">standard 6th</option>
                           </select>
-        
                         </div>
-
-                        
                         
                         <div class="form__row ">
                             <label for="course">course</label>
@@ -114,7 +111,11 @@ $meta_key = "uppi online academy, IIT-JEE online academy, NEET online academy, o
 
                          
                         </div>
-  
+
+                        <div class="form__row registration-textarea">
+                          <label for="msg">Message</label>
+                          <textarea name="msg" id="msg"></textarea>
+                        </div>
                       </div>
   
                       <div class="form__bottom">
