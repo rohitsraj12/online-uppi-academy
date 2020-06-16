@@ -8,16 +8,16 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Home | uppionlineacademy.com</title>
+    <title><?php echo $page_title;?> | UPPI Online Academy</title>
 
-    <meta name="description" content="<?php //echo $meta_discription;?>" />
-    <meta name="keywords" content="<?php //echo $meta_key;?>" />
+    <meta name="description" content="<?php echo $meta_discription;?>" />
+    <meta name="keywords" content="<?php echo $meta_key;?>" />
 
     <meta name="author" content="Rohit, rohitwebco@gmail.com" />
     <meta name="distribution" content="global" />
     <meta name="MobileOptimized" content="width" />
     <meta name="HandheldFriendly" content="true" />
-    <meta name="url" content="<?php // base_url();?>" />
+    <meta name="url" content="<?php base_url();?>" />
     <meta name="Classification" content="tuition institute" />
     <meta name="owner" content="" />
     <meta name="author" content="" />
