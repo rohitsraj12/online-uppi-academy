@@ -14,7 +14,7 @@
                 </div>
                 <div class="main__content">
                     <div class="main__content-wrap">
-                        <a href="<?=base_url();?>dashboard/products/insert_new_product.php" class="btn btn-primary">add new teacher</a>
+                        <a href="<?=base_url();?>dashboard/teacher/insert_teacher.php" class="btn btn-primary">add new teacher</a>
                         <div class="all__product">
                         <table class="table table-striped">
                             <thead>
@@ -47,14 +47,13 @@
                                     <td><?php echo $row['teacher_id'];?></td>
                                     <td><?php echo $row['teacher_name'];?></td>
                                     <td><img src="<?php echo base_url() . 'img/teacher/' . $row['teacher_image'];?>" alt="<?php echo $row['teacher_name'];?>"></a></td>
-                                    
                                     <td><?php echo $row['teacher_detail'];?></td>
                                     <td><?php echo $row['teacher_subject'];?></td>
                                     <td><?php echo $row['active'];?></td>
                                     <td><?php echo $row['teacher_phone'];?></td>
                                     <td><?php echo $row['teacher_email'];?></td>
-                                    <!-- <td><a href="<?php echo base_url();?>dashboard/teachers/delete_teacher.php?id=<?php echo $row['student_id'];?>">delete</a></td> -->
-                                    <td><a href="<?php echo base_url();?>dashboard/teachers/update_teacher.php?id=<?php echo $row['teacher_id'];?>">edit</a></td>
+                                    <!-- <td><a href="<?php echo base_url();?>dashboard/teacher/delete_teacher.php?id=<?php echo $row['student_id'];?>">delete</a></td> -->
+                                    <td><a href="<?php echo base_url();?>dashboard/teacher/update_teacher.php?id=<?php echo $row['teacher_id'];?>">edit</a></td>
                                 </tr>
                                     <?php
                                         }
