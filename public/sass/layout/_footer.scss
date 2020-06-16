@@ -37,6 +37,7 @@
   .body-footer {
     &-top {
       margin: 0 auto;
+      padding-bottom: 5rem;
   
       @media (min-width: 768px) {
         width: 80%;
@@ -67,7 +68,7 @@
       background-color: $color-secondary;
       padding: 2rem;
   
-      .wrap__container {
+      .wrap-container {
         @media (min-width: 582px) {
           display: flex;
           flex-direction: row;
