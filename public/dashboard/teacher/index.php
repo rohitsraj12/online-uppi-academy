@@ -46,11 +46,11 @@
                                 <tr>
                                     <td><?php echo $row['teacher_id'];?></td>
                                     <td><?php echo $row['teacher_name'];?></td>
-                                    <td><img src="<?php echo base_url() . $row['teacher_image'];?>" alt="<?php echo $row['teacher_name'];?>"></a></td>
+                                    <td><img src="<?php echo base_url() . 'img/teacher/' . $row['teacher_image'];?>" alt="<?php echo $row['teacher_name'];?>"></a></td>
                                     
                                     <td><?php echo $row['teacher_detail'];?></td>
                                     <td><?php echo $row['teacher_subject'];?></td>
-                                    <td><?php echo $row['teacher_active'];?></td>
+                                    <td><?php echo $row['active'];?></td>
                                     <td><?php echo $row['teacher_phone'];?></td>
                                     <td><?php echo $row['teacher_email'];?></td>
                                     <!-- <td><a href="<?php echo base_url();?>dashboard/teachers/delete_teacher.php?id=<?php echo $row['student_id'];?>">delete</a></td> -->
