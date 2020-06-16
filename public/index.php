@@ -3,6 +3,7 @@
   $meta_discription = "";
   $meta_key = "uppi online academy, IIT-JEE online academy, NEET online academy, online academy, chemistry, physics, maths, biology";
   include('../private/config/config.php');
+  require_once ("../private/config/database/db_connect.php");
   include('../private/required/public/header.public.php');
 ?>
 
@@ -164,10 +165,21 @@
             </header>
             <div class="video-body">
               <ul class="owl-carousel owl-theme">
+                <?php
+               $query = "SELECT * from youtube_videos WHERE active = 1";
+
+                $result = mysqli_query($conn , $query);
+
+                if(!$result){
+                    die("query failed");
+                }
+
+                while($row = mysqli_fetch_assoc($result)){
+                  ?>
                 <li>
                   <div class="video-wrap">
                     <iframe
-                      src="https://www.youtube.com/embed/Zg1JhzqBtMA"
+                      src="<?php echo $row['vdo_url']?>"
                       frameborder="0"
                       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                       class="video__iframe"
@@ -175,51 +187,12 @@
                     ></iframe>
                   </div>
                   <header class="video__header">
-                    Chemistry
+                   <?php echo $row['vdo_title']?>
                   </header>
                 </li>
-                <li>
-                  <div class="video-wrap">
-                    <iframe
-                      src="https://www.youtube.com/embed/KIOdQZr8IoA"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                      class="video__iframe"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-                  <header class="video__header">
-                    Introduction to chemistry - Hydrogen Bond
-                  </header>
-                </li>
-                <li>
-                  <div class="video-wrap">
-                    <iframe
-                      src="https://www.youtube.com/embed/ecutKK1wdSw"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                      class="video__iframe"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-                  <header class="video__header">
-                    introduction to chemistry - Hydrogen spectrum
-                  </header>
-                </li>
-                <li>
-                  <div class="video-wrap">
-                    <iframe
-                      src="https://www.youtube.com/embed/Jh_CvFmNTiY"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                      class="video__iframe"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-                  <header class="video__header">
-                    introduction to chemistry - Coordinate Covalent bond
-                  </header>
-                </li>
+                <?php
+                }
+                ?>
               </ul>
             </div>
           </section>
@@ -231,105 +204,44 @@
               <h2 class="heading-primary">Teachers</h2>
             </header>
             <section class="teacher-main">
+              <?php
+
+                    $query = "SELECT * from teachers";
+
+                    $result = mysqli_query($conn , $query);
+
+                    if(!$result){
+                        die("query failed");
+                    }
+                    
+                    while($row = mysqli_fetch_assoc($result)){
+              ?>
               <article class="teacher-card">
                 <div class="teacher-card-image">
                   <figure>
                     <img
-                      src="<?php base_url();?>img/teacher/N.Srinivasarao.jpg"
-                      alt="N.Srinivasarao"
+                      src="<?php base_url();?>img/teacher/<?php echo $row['teacher_image'];?>"
+                      alt="<?php echo $row['teacher_name'];?>"
                     />
                   </figure>
                 </div>
                 <div class="teacher-card-header">
                   <header>
                     <h1>
-                      N.Srinivasarao, M.Sc, B.Ed.
-                      <strong class="teacher-card-subject"> Chemistry </strong>
+                    <?php echo $row['teacher_name'];?>, <?php echo $row['teacher_detail'];?>.
+                      <strong class="teacher-card-subject"> <?php echo $row['teacher_subject'];?></strong>
                     </h1>
                   </header>
                 </div>
                 <div class="teacher-card-body">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Odit impedit porro error corporis quibusdam corrupti quas,
-                    debitis deleniti officiis asperiores.
+                    
                   </p>
                 </div>
               </article>
-
-              <article class="teacher-card">
-                <div class="teacher-card-image">
-                  <figure>
-                    <img
-                      src="<?php base_url();?>img/teacher/P.Venkatesh.jpg"
-                      alt="P.Venkatesh"
-                    />
-                  </figure>
-                </div>
-                <div class="teacher-card-header">
-                  <header>
-                    <h1>
-                      P. Venkatesh, M.Sc, B.Ed
-                      <strong class="teacher-card-subject"> Physics </strong>
-                    </h1>
-                  </header>
-                </div>
-                <div class="teacher-card-body">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Odit impedit porro error corporis quibusdam corrupti quas,
-                    debitis deleniti officiis asperiores.
-                  </p>
-                </div>
-              </article>
-
-              <article class="teacher-card">
-                <div class="teacher-card-image">
-                  <figure>
-                    <img src="<?php base_url();?>img/teacher/teacherImage.png" alt="" />
-                  </figure>
-                </div>
-                <div class="teacher-card-header">
-                  <header>
-                    <h1>
-                      teacher name
-                      <strong class="teacher-card-subject"> subject </strong>
-                    </h1>
-                  </header>
-                </div>
-                <div class="teacher-card-body">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Odit impedit porro error corporis quibusdam corrupti quas,
-                    debitis deleniti officiis asperiores.
-                  </p>
-                </div>
-              </article>
-
-              <article class="teacher-card">
-                <div class="teacher-card-image">
-                  <figure>
-                    <img src="<?php base_url();?>img/teacher/teacherImage.png" alt="" />
-                  </figure>
-                </div>
-                <div class="teacher-card-header">
-                  <header>
-                    <h1>
-                      teacher name
-                      <strong class="teacher-card-subject">
-                        subject
-                      </strong>
-                    </h1>
-                  </header>
-                </div>
-                <div class="teacher-card-body">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Odit impedit porro error corporis quibusdam corrupti quas,
-                    debitis deleniti officiis asperiores.
-                  </p>
-                </div>
-              </article>
+              <?php 
+                    }
+              ?>
             </section>
           </section>
           <!-- end  section teacher -->
