@@ -65,7 +65,7 @@ body {
 .body-header-text {
   font: {
     family: $font-primary;
-    size: 1.6rem;
+    size: 1.4rem;
     weight: 400;
   }
   color: $color-white;
@@ -88,9 +88,10 @@ body {
     &__link {
       font: {
         family: $font-nav;
-        size: 2rem;
+        size: 1.8rem;
         weight: 400;
       }
+      text-transform: uppercase;
       color: $color-white;
       letter-spacing: 0.6px;
     }
@@ -119,7 +120,6 @@ body {
     }
   }
 }
-
 
 // contact
 .contact {
@@ -213,7 +213,7 @@ body {
   a {
     font: {
       family: $font-primary;
-      size: 1.6rem;
+      size: 1.4rem;
       weight: 300;
     }
     color: $color-primary;
@@ -222,7 +222,7 @@ body {
   p {
     font: {
       family: $font-heading;
-      size: 1.6rem;
+      size: 1.4rem;
       weight: 300;
     }
     color: rgba($color-gray-light-1, 0.6);
