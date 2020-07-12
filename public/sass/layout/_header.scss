@@ -6,7 +6,6 @@
   z-index: 99;
 
   &-top {
-    padding: 0.5rem 0;
     background-color: $color-primary;
 
     .wrap-container {
@@ -24,7 +23,7 @@
   }
 
   &-main {
-    background-color: rgba($color-black, 0.9);
+    background-color: rgba($color-black, 0.8);
 
     header {
       margin: 0 auto;
@@ -62,18 +61,17 @@
     }
   }
 
-  &-contact{
+  &-contact {
     &__link {
-    // font: {
-    //   family: $font-primary;
-    //   size: 2.2rem;
-    //   weight: 600;
+      // font: {
+      //   family: $font-primary;
+      //   size: 2.2rem;
+      //   weight: 600;
     }
-    &__icon{
+    &__icon {
       margin: 0 0.5rem 0 0;
     }
   }
-    
 
   &-brand {
     img {
