@@ -1,164 +1,164 @@
 .body-footer {
-    background-image: url("../img/bg/bg-footer.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    width: 100%;
-    position: relative;
-    z-index: 2;
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-color: rgba(10, 15, 28, 0.95);
-      z-index: -1;
+  background-image: url("../img/bg/bg-footer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(10, 15, 28, 0.95);
+    z-index: -1;
+  }
+
+  footer {
+    padding-top: 10rem;
+    @media (min-width: 768px) {
     }
-  
-    footer {
-      padding-top: 10rem;
-      @media (min-width: 768px) {
+
+    @media (min-width: 582px) {
+    }
+
+    @media (max-width: 581px) {
+    }
+
+    ul {
+      padding: 0 0 0 1.3rem;
+    }
+  }
+}
+
+.body-footer {
+  &-top {
+    margin: 0 auto;
+    padding-bottom: 5rem;
+
+    @media (min-width: 768px) {
+      width: 80%;
+    }
+
+    @media (min-width: 582px) {
+      width: 90%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+
+      & > div {
+        width: 22%;
       }
-  
-      @media (min-width: 582px) {
-      }
-  
-      @media (max-width: 581px) {
-      }
-  
-      ul {
-        padding: 0 0 0 1.3rem;
+    }
+
+    @media (max-width: 581px) {
+      width: 94%;
+
+      & > div {
+        padding-bottom: 5rem;
+        text-align: center;
       }
     }
   }
-  
-  .body-footer {
-    &-top {
-      margin: 0 auto;
-      padding-bottom: 5rem;
-  
-      @media (min-width: 768px) {
-        width: 80%;
-      }
-  
+
+  &-bottom {
+    background-color: $color-secondary;
+    padding: 1rem 2rem;
+
+    .wrap-container {
       @media (min-width: 582px) {
-        width: 90%;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-  
-        & > div {
-          width: 22%;
-        }
+        justify-content: space-between;
       }
-  
       @media (max-width: 581px) {
-        width: 94%;
-  
-        & > div {
-          padding-bottom: 5rem;
-          text-align: center;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.footer {
+  &-brand {
+    @media (min-width: 582px) {
+      width: 40%;
+      padding: 0 0 0 2rem;
+    }
+
+    @media (max-width: 581px) {
+      width: 100%;
+      text-align: center;
+      padding-bottom: 5rem;
+    }
+
+    &__image {
+      height: 10rem;
+      padding-bottom: 2rem;
+    }
+  }
+
+  &-contact {
+  }
+
+  &__header {
+    @media (min-width: 582px) {
+      padding-left: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid rgba($color-secondary, 0.4);
+      margin: 0 0 2rem 0;
+    }
+
+    @media (max-width: 581px) {
+      margin: 0 0 1rem 0;
+    }
+  }
+
+  &-main-nav {
+    @media (min-width: 582px) {
+      padding-left: 2rem;
+    }
+  }
+
+  &-social {
+    &-media {
+      ul {
+        display: flex;
+        flex-direction: row;
+
+        @media (max-width: 581px) {
+          justify-content: center;
         }
       }
     }
-  
-    &-bottom {
-      background-color: $color-secondary;
-      padding: 2rem;
-  
-      .wrap-container {
+
+    &__list {
+      text-align: center;
+      width: 3.5rem;
+      height: 3.5rem;
+      background-color: $color-primary;
+      border-radius: 50%;
+      transition: 300ms ease-in-out;
+
+      & + li {
         @media (min-width: 582px) {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
+          margin-left: 1rem;
         }
         @media (max-width: 581px) {
-          text-align: center;
+          margin-left: 2rem;
         }
+      }
+
+      &:hover {
+        transform: scale(1.05);
+        background-color: $color-white;
+      }
+
+      &:hover i {
+        color: $color-primary;
       }
     }
   }
-  
-  .footer {
-    &-brand {
-      @media (min-width: 582px) {
-        width: 40%;
-        padding: 0 0 0 2rem;
-      }
-  
-      @media (max-width: 581px) {
-        width: 100%;
-        text-align: center;
-        padding-bottom: 5rem;
-      }
-  
-      &__image {
-        height: 10rem;
-        padding-bottom: 2rem;
-      }
-    }
-  
-    &-contact {
-    }
-  
-    &__header {
-      @media (min-width: 582px) {
-        padding-left: 1rem;
-        padding-bottom: 1rem;
-        border-bottom: 1px solid rgba($color-secondary, 0.4);
-        margin: 0 0 2rem 0;
-      }
-  
-      @media (max-width: 581px) {
-        margin: 0 0 1rem 0;
-      }
-    }
-  
-    &-main-nav {
-      @media (min-width: 582px) {
-        padding-left: 2rem;
-      }
-    }
-  
-    &-social {
-      &-media {
-        ul {
-          display: flex;
-          flex-direction: row;
-  
-          @media (max-width: 581px) {
-            justify-content: center;
-          }
-        }
-      }
-  
-      &__list {
-        text-align: center;
-        width: 3.5rem;
-        height: 3.5rem;
-        background-color: $color-primary;
-        border-radius: 50%;
-        transition: 300ms ease-in-out;
-  
-        & + li {
-          @media (min-width: 582px) {
-            margin-left: 1rem;
-          }
-          @media (max-width: 581px) {
-            margin-left: 2rem;
-          }
-        }
-  
-        &:hover {
-          transform: scale(1.05);
-          background-color: $color-white;
-        }
-  
-        &:hover i {
-          color: $color-primary;
-        }
-      }
-    }
-  }
+}
