@@ -1,6 +1,6 @@
 .section {
   &-course-detail {
-    padding: 30rem 0 10rem;
+    padding: 24rem 0 10rem;
   }
 }
 
@@ -73,7 +73,18 @@
 .course {
   &-tab {
     &__header {
-      padding-bottom: 5rem;
+      padding-bottom: 2rem;
+    }
+
+    &-note {
+      padding-top: 0.5rem;
+      // font-style: italic;
+      // opacity: 0.6;
+
+      p {
+        font-size: 1.3rem;
+        color: $color-gray-dark-1;
+      }
     }
 
     &-body {
@@ -114,6 +125,61 @@
   }
 }
 
+.select-box {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: $color-primary-2;
+  background-image: none;
+}
+
 // .tab-content > section:hover {
 //   transform: scale(1.1);
 // }
+
+select::-ms-expand {
+  display: none;
+}
+
+.course-tab-body {
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  margin: 0 auto;
+  line-height: 3;
+  background: $color-primary-2;
+  overflow: hidden;
+  border-radius: 0.25em;
+}
+
+.select-box {
+  flex: 1;
+  padding: 0 1.5rem;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.course-tab-body::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: $color-primary-3;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: 0.25s all ease;
+  -o-transition: 0.25s all ease;
+  transition: 0.25s all ease;
+  color: $color-white;
+}
+/* Transition */
+.course-tab-body:hover::after {
+  color: #f39c12;
+}
