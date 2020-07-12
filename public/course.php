@@ -8,16 +8,16 @@ $meta_key = "uppi online academy, IIT-JEE online academy, NEET online academy, o
 
 ?>
 
-<div class="body-container">
-        <main>
+<div class="body-container">       
+  <main>
           <section class="section-course-detail">
             <article class="course-detail-top">
               <article class="course-tab u-center-text">
-                <header class="courser-tab__header">
+                <header class="course-tab__header">
                   <span class="heading-primary">ONLINE PACKAGES FOR</span>
                 </header>
                 <div class="course-tab-body">
-                  <select id="select-box">
+                  <select class="select-box" id="select-box">
                     <option value="1">standard 12th</option>
                     <option value="2">standard 11th</option>
                     <option value="3">standard 10th</option>
@@ -26,6 +26,9 @@ $meta_key = "uppi online academy, IIT-JEE online academy, NEET online academy, o
                     <option value="6">standard 7th</option>
                     <option value="7">standard 6th</option>
                   </select>
+                </div>
+                <div class="course-tab-note">
+                  <p>Please select your standard</p>
                 </div>
               </article>
             </article>
