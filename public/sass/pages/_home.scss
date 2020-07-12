@@ -44,6 +44,9 @@ body {
   }
 
   &-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #fff;
     padding: 1rem 3rem;
     border-radius: 0.2rem;
