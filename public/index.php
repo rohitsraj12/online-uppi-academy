@@ -36,7 +36,6 @@
         <!-- end banner container-->
       </div>
       <!-- end body banner -->
-
       
       <div class="body-container">
         <main>
@@ -44,7 +43,7 @@
         <section class="section__course">
             <header class="section__header">
               <sub class="sub-primary">Our Online Offerings</sub>
-              <h2 class="heading-primary">IIT JEE, CBSE, ICSE, NEET</h2>
+              <h2 class="heading-primary u-padding-top-small">IIT JEE, CBSE, ICSE, NEET</h2>
             </header>
             <section class="course__body">
               <article class="course-card">
