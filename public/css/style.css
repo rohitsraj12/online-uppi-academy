@@ -1029,7 +1029,7 @@ select::-ms-expand {
 
 .wrap-contact-page {
   padding-top: 20rem; }
-  @media (max-width: 581px) {
+  @media (max-width: 768px) {
     .wrap-contact-page {
       display: flex;
       flex-direction: column-reverse; } }
@@ -1046,26 +1046,31 @@ select::-ms-expand {
       padding: 10rem 0;
       flex-direction: row;
       justify-content: space-between; } }
-  @media (max-width: 581px) {
+  @media (max-width: 767px) {
     .section-form {
-      flex-direction: column-reverse;
-      width: 94%; } }
+      flex-direction: column;
+      width: 94%;
+      padding-bottom: 8rem; } }
 
 @media (min-width: 768px) {
   .contact-location {
-    width: 45%; } }
+    width: 45%;
+    padding-right: 4rem; } }
 
-@media (max-width: 581px) {
+@media (max-width: 767px) {
   .contact-location {
     padding-bottom: 8rem;
-    padding-top: 6rem;
+    padding-top: 8rem;
     text-align: center; } }
 
 .contact-heading {
   padding-bottom: 3rem; }
   @media (min-width: 768px) {
     .contact-heading {
-      width: 60%; } }
+      width: 100%; } }
+  @media (max-width: 768px) {
+    .contact-heading {
+      text-align: center; } }
 
 @media (min-width: 582px) {
   .location__map .map-iframe {
