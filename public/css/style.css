@@ -912,7 +912,9 @@ body {
   border-radius: 2rem 2rem 0 0;
   padding: 3rem 2rem;
   text-align: center;
-  background-color: #333;
+  background-color: #a01111;
+  background-image: url(../img/bg/bg-testimonial.png);
+  background-position: 338px 552px;
   color: #fff; }
   .course-detail__header p {
     padding: 2rem 0; }
